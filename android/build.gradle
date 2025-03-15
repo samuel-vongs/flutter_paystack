@@ -24,14 +24,13 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    namespace 'co.paystack.flutterpaystack'
+    namespace = 'co.paystack.flutterpaystack'
     compileSdkVersion 32
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
     defaultConfig {
-        applicationId = "co.paystack.flutterpaystack"
         minSdkVersion 16
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         versionCode 21
